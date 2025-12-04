@@ -1,6 +1,6 @@
 --SELECT nev, ev FROM allat;
 
---SELECT CONCAT(nev,' - ', ev) AS Védett_állatok FROM allat;
+--SELECT CONCAT(nev,' - ', ev) AS VÃ©dett_Ã¡llatok FROM allat;
 
 --SELECT * FROM allat
 --WHERE ev IS NULL;
@@ -12,14 +12,14 @@
 --SELECT nev FROM allat
 --WHERE ev = 1993;
 
---SELECT allat.nev AS Faj, kategoria.nev AS Kategória FROM allat
+--SELECT allat.nev AS Faj, kategoria.nev AS KategÃ³ria FROM allat
 --JOIN kategoria ON allat.katid = kategoria.id
 --WHERE ev = 1993;
 
-SELECT ev FROM allat
-WHERE nev = 'parlagi vipera';
+--SELECT ev FROM allat
+--WHERE nev = 'parlagi vipera';
 
---SELECT CONCAT(ertek.forint, 'Ft') AS 'Parlagi_vipera_eszmei_értéke' FROM allat
+--SELECT CONCAT(ertek.forint, 'Ft') AS 'Parlagi_vipera_eszmei_Ã©rtÃ©ke' FROM allat
 --JOIN ertek ON ertek.id=allat.ertekid
 --WHERE nev LIKE 'parlagi vipera';
 
@@ -36,5 +36,6 @@ WHERE nev = 'parlagi vipera';
 
 --SELECT forint FROM ertek;
 
-SELECT * FROM allat
-WHERE ev IS NOT NULL AND ev = (SELECT MAX(ev) FROM allat WHERE ev is not null);
+--SELECT * FROM allat
+--WHERE ev IS NOT NULL AND ev = (SELECT MAX(ev) FROM allat WHERE ev is not null);
+
